@@ -3,7 +3,7 @@ workdir /app
 
 run apt update -y
 run apt upgrade -y
-run apt install -y nginx php8.3 php8.3-fpm mysql-server 
+run apt install -y nginx php8.3 php8.3-fpm php8.3-mysql mysql-server composer
 
 
 copy ./nginx-server.conf /etc/nginx/sites-available/ict187.ch
