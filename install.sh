@@ -14,7 +14,7 @@ sudo apt-get -y update
 
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-sudo usermod -aG docker anulax 
+sudo usermod -aG docker $USER
 newgrp docker 
 sudo docker build -t server-ict .
 sudo docker run -p 80:80 server-ict
